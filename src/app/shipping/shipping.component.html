@@ -1,0 +1,8 @@
+<h2 class="title">SHIPPING</h2>
+
+<div class="card" *ngFor="let shipping of shippingCosts | async">
+    <div class="card-body d-flex justify-content-between">
+        <div>{{ shipping.type }}</div>
+        <div>${{ shipping.price }}</div>
+    </div>
+</div>
